@@ -2,9 +2,10 @@ package api
 
 import (
 	"context"
-	"github.com/amir-the-h/okex"
-	"github.com/amir-the-h/okex/api/rest"
-	"github.com/amir-the-h/okex/api/ws"
+
+	"github.com/vdmytriv/okex"
+	"github.com/vdmytriv/okex/api/rest"
+	"github.com/vdmytriv/okex/api/ws"
 )
 
 // Client is the main api wrapper of okex

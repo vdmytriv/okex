@@ -22,7 +22,7 @@ Installation
 -----------------
 
 ```bash
-go get github.com/amir-the-h/okex@v1.0.28-alpha
+go get github.com/vdmytriv/okex@v1.0.28-alpha
 ```
 
 Usage
@@ -33,12 +33,12 @@ package main
 
 import (
 	"context"
-	"github.com/amir-the-h/okex"
-	"github.com/amir-the-h/okex/api"
-	"github.com/amir-the-h/okex/events"
-	"github.com/amir-the-h/okex/events/private"
-	ws_private_requests "github.com/amir-the-h/okex/requests/ws/private"
-	ws_public_requests "github.com/amir-the-h/okex/requests/ws/public"
+	"github.com/vdmytriv/okex"
+	"github.com/vdmytriv/okex/api"
+	"github.com/vdmytriv/okex/events"
+	"github.com/vdmytriv/okex/events/private"
+	ws_private_requests "github.com/vdmytriv/okex/requests/ws/private"
+	ws_public_requests "github.com/vdmytriv/okex/requests/ws/public"
 	"log"
 )
 
@@ -48,7 +48,7 @@ func main() {
 	passphrase := "YOUR-PASS-PHRASE"
 	dest := okex.NormalServer // The main API server
 	ctx := context.Background()
-	client, err := api.NewClient(ctx, apiKey, secretKey, passphrase, &dest)
+	client, err := api.NewClient(ctx, apiKey, secretKey, passphrase, dest)
 	if err != nil {
 		log.Fatalln(err)
 	}

@@ -2,10 +2,11 @@ package rest
 
 import (
 	"encoding/json"
-	"github.com/amir-the-h/okex"
-	requests "github.com/amir-the-h/okex/requests/rest/tradedata"
-	responses "github.com/amir-the-h/okex/responses/trade_data"
 	"net/http"
+
+	"github.com/vdmytriv/okex"
+	requests "github.com/vdmytriv/okex/requests/rest/tradedata"
+	responses "github.com/vdmytriv/okex/responses/trade_data"
 )
 
 // TradeData
