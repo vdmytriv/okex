@@ -40,7 +40,7 @@ type (
 		FeeCcy      string              `json:"feeCcy"`
 		RebateCcy   string              `json:"rebateCcy"`
 		Px          okex.JSONFloat64    `json:"px"`
-		Sz          okex.JSONInt64      `json:"sz"`
+		Sz          string              `json:"sz"`
 		Pnl         okex.JSONFloat64    `json:"pnl"`
 		AccFillSz   okex.JSONInt64      `json:"accFillSz"`
 		FillPx      okex.JSONFloat64    `json:"fillPx"`
